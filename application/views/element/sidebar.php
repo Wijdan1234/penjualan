@@ -40,7 +40,7 @@
 			<li class="<?php echo is_menu('supplier','create');?>"><a href="<?php echo site_url('supplier/create');?>"><i class="fa fa-plus-square-o" aria-hidden="true"></i> <span>Add Sales</span></a></li>
           </ul>
         </li>
-        <li class="treeview <?php echo is_menu('pengguna');?>">
+        <li class="treeview <?php echo is_menu('user');?>">
           <a href="#"><i class="fa fa-users"></i> <span>pengguna</span> <i class="fa fa-angle-left pull-right"></i></a>
           <ul class="treeview-menu"> 
 			<li class="<?php echo is_menu('user');?>"><a href="<?php echo site_url('user');?>"><i class="fa fa-users" aria-hidden="true"></i> <span>List pengguna</span></a></li>
