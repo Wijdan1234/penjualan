@@ -64,7 +64,7 @@
                       <td><?php echo $user->name;?></td>
                       <td><?php echo $user->username;?></td>
                       <td><?php echo $user->email;?></td>
-                      <td><?php echo $user->jabatan;?></td>
+                      <td><?php echo ($user->jabatan == 1? 'Admin' : ($user->jabatan == 2? 'Pegawai' : 'HRD/Manager Sales/Accounting'));?></td>
                       <td>
                       <a href="<?php echo site_url('user/edit').'/'.$user->id;?>" class="btn btn-xs btn-primary">Edit</a>
                       <a onclick="return confirm('Are you sure you want to delete this user?');" href="<?php echo site_url('user/delete').'/'.$user->id;?>" class="btn btn-xs btn-danger">Delete</a>
